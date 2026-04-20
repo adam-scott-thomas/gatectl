@@ -1,0 +1,40 @@
+# gatectl demo script — run with: gatectl -s http://localhost:8090 then: script examples/demo_script.txt
+
+# Register demo tools
+demo
+
+# Check what we have
+tools
+
+# Filter at normal mode
+mode 0.1
+filter
+
+# Raise to elevated — watch deploy disappear
+mode 0.5
+filter
+
+# Try to validate deploy at elevated
+validate deploy
+
+# Crisis mode — only safe tools survive
+mode 0.9
+filter
+
+# Build and verify an envelope
+mode 0.5
+envelope read_file demo_session
+
+# Verify it
+verify
+
+# Tamper with it
+tamper
+
+# Override thresholds
+thresholds high_impact 0.20
+
+# Now deploy is suppressed even at 0.25
+mode 0.25
+filter
+validate deploy

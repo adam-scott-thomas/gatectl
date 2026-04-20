@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "gatectl"
+version = "0.1.0"
+description = "Interactive Gate CLI — zero dependencies, REPL + one-shot"
+requires-python = ">=3.10"
+# NO external dependencies — stdlib only
+
+[project.scripts]
+gatectl = "gatectl.__main__:main"
