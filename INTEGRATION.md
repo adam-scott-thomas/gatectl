@@ -64,7 +64,7 @@ DENIED: execution_class_suppressed
 
 | Dimension | gate-cli | gatectl |
 |-----------|----------|---------|
-| Dependencies | click, httpx, rich, pyyaml, maelstrom-gate | None (stdlib) |
+| Dependencies | click, httpx, rich, pyyaml, gate-keeper | None (stdlib) |
 | Framework | Click (batch-only) | cmd.Cmd (interactive REPL) |
 | Session state | None | Mode, last envelope persist between commands |
 | Prompt | Static | Dynamic: shows mode + zone |

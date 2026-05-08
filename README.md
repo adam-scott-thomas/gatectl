@@ -4,7 +4,7 @@
 [![tests](https://img.shields.io/badge/tests-27_passing-brightgreen)]()
 [![license](https://img.shields.io/badge/license-Apache_2.0-green)]()
 
-> Interactive CLI for Maelstrom Gate. Zero dependencies.
+> Interactive CLI for Gatekeeper. Zero dependencies.
 
 One binary, stdlib only. Talks to any running `gate-server` (Python or Go) over
 HTTP. Runs as an interactive REPL for exploration or as a one-shot command for
@@ -77,7 +77,7 @@ pytest tests/
 
 ## How it fits
 
-Layer 1 (transport) in [Maelstrom Gate](https://github.com/adam-scott-thomas/maelstrom-gate).
+Layer 1 (transport) in [Gatekeeper](https://github.com/adam-scott-thomas/gate-keeper).
 Operator tool. Pairs with `gate-server` or `gate-server-go`.
 
 ## License
